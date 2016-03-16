@@ -2,13 +2,30 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Service Chooser App | Tutorialzine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./dist/style.css">
 </head>
 
 <body>
-    <div class="container"></div>
+    <div class="container">
+    	<form id="main" method="post" action="submit.php">
+    		<h1>My Services</h1>
+
+    		<ul id="services">
+    			
+    		</ul>
+
+    		<p id="total">Total: <span>$0</span></p>
+
+    		<input type="submit" id="order" value="Order" />
+    		<br/><br/>
+    		<input type="text" class="title" placeholder="title" />
+    		<input type="text" class="price" placeholder="price" />
+    		<input type="button" class="add-btn" value="add" />
+    	</form>
+    </div>
+
     <script type="text/javascript" src="./dist/app-browserify.js"></script>
 </body>
 
